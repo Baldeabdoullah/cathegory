@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ecf0f1;
+}
+
+.section-cathegorie {
+  margin: 10px auto;
+}
+
+/* LES TITRES DU MENU */
+
+.titre {
+  /* color: #e67e22; */
+  color: #333;
+  text-align: center;
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* LA LIGNE 1 */
+
+.ligne1 {
+  height: 4px;
+  width: 90px;
+  background-color: #e67e22;
+  text-align: center;
+  margin: 15px auto;
+  display: block;
+}
+
+/* LES BOUTTONS */
+
+.les-bouttons {
+  text-align: center;
+  margin: 35px auto;
+}
+
+.boutton {
+  margin: 0 10px;
+font-family: 'Roboto',
+sans-serif;
+  font-size: 18px;
+  /* color: #e67e22; */
+  color: #333;
+  padding: 5px 5px 5px 5px;
+  /* border: 2px solid #e67e22; */
+  border: 2px solid #333;
+  border-radius: 5px;
+  transition: 0.6s;
+}
+
+.boutton:hover {
+  /* background-color: #e67e22;
+  color: #fff; */
+  background-color: black;
+  color: #fff;
+}
+
+/* LE MENU */
+
+.le-menu {
+  text-align: center;
+
+  margin: 0px 40px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
+  transition: 0.7s ;
+}
+
+/* ELEMENT DU MENU */
+
+.element {
+  display: flex;
+  margin: 0 auto;
+}
+
+/* IMAGE */
+
+.image {
+  height: 150px;
+  /* border: 4px solid #e67e22; */
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+/* ENTETE */
+
+.element-entete {
+  margin: 0 15px;
+}
+
+/* NOTICE */
+
+.notice {
+  display: flex;
+}
+
+.nom {
+font-family: 'Roboto',
+sans-serif;
+  color: #333;
+  margin: 0px 10px 0px 0px;
+  text-transform: uppercase;
+}
+
+.prix {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e67e22;
+  margin: 0px 0px 0px 50px;
+  font-weight: 100;
+}
+
+/* LIGNE 2 */
+
+.ligne2 {
+  height: 3px;
+  max-width: 350px;
+  background-color: #333;
+  text-align: center;
+  margin: 15px auto;
+  display: block;
+}
+
+/* DESCRIPTION */
+
+.description {
+font-family: 'Roboto',
+sans-serif;
+  max-width: 350px;
+  text-align: justify;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #34495e;
+  word-spacing: -2px;
+}
+
+@media (max-width: 1160px) {
+  .le-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .boutton {
+    margin: 0 5px;
+    font-size: 15px;
+  }
+
+  .ligne2 {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .element {
+    display: block;
+  }
+
+  .image {
+    height: 300px;
+  }
+
+  .description {
+    text-align: center;
+    text-align: justify;
+  }
+
+  .ligne2 {
+    max-width: 450px;
+  }
+}
